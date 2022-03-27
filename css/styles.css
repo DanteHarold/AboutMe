@@ -143,3 +143,19 @@ img{
 .footer{
     border-top: 1px solid #fff;
 }
+.center{
+    position: absolute;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background: linear-gradient(to right, #160b08, #281a3f);
+}
+.hidden{
+    overflow: hidden;
+}
