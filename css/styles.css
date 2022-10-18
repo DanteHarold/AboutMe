@@ -1,161 +1,170 @@
 @font-face {
-    font-family: LazyMeow;
-    src: url("../assets/fonts/font.otf");
+  font-family: LazyMeow;
+  src: url("../assets/fonts/font.otf");
 }
 :root {
-    --white-color: #fff;
-    --black-color: #000;
-    --link-color: #d156a88a;
-    --second-dark-color : #070C11;
-    --black-alpha-color: rgba(0, 0, 0,.7);
-    --font: LazyMeow, sans-serif;
-    --max-width: 1200px;
+  --white-color: #fff;
+  --black-color: #000;
+  --link-color: #d156a88a;
+  --second-dark-color: #070c11;
+  --black-alpha-color: rgba(0, 0, 0, 0.7);
+  --font: LazyMeow, sans-serif;
+  --max-width: 1200px;
 }
 
 /* ************RESET**************** */
-html{
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *::after,
-*::before{
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
-body{
-    overflow-x: hidden;
-    font-family: var(--font);
-    background-color: var(--second-dark-color);
+body {
+  overflow-x: hidden;
+  font-family: var(--font);
+  background-color: var(--second-dark-color);
 }
-li,ul{
-    list-style:  none;
-    margin: 0;
-    padding: 0;
+li,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 /* ***********ESTILOS PAGINA***************** */
-img{
-    max-width: 100%;
-    height: auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
-.style-container{
-    max-width: var(--max-width);
-    margin: auto;
+.style-container {
+  max-width: var(--max-width);
+  margin: auto;
 }
 /* *****************************ESTILOS HEADER****************************** */
-.header{
-    position: sticky;
-    top: 0;
-    height: 5rem;
-    width: 100%;
-    font-size: 2.2rem;
-    border-bottom: thin solid var(--white-color);
-    background-color: var(--second-dark-color);
-    z-index: 999;
+.header {
+  position: sticky;
+  top: 0;
+  height: 4rem;
+  width: 100%;
+  font-size: 2.2rem;
+  background-color: var(--second-dark-color);
+  z-index: 999;
 }
-.header span{
-    font-size: 0.9rem;
+
+.header > nav {
+  background-color: var(--second-dark-color);
 }
-.header a{
-    color: #fff;
+.navbar-toggler-icon {
+  color: red !important;
+  fill: red !important;
+  background-image: red !important;
+}
+.header span {
+  font-size: 0.9rem;
+}
+.header a {
+  color: #fff;
 }
 .header a:hover,
-.hero-image a:hover{
-    color: var(--link-color)
+.hero-image a:hover {
+  color: var(--link-color);
 }
 /* *********************************ESTILOS HOME******************************** */
-.hero-image{
-    width: 100%;
-    height: 100%;
-    background-image: url('../assets/img/tech.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+.hero-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/tech.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
-.hero-opacity{
-    width: 100%;
-    min-height: 100vh;
-    background-color: var(--black-alpha-color);
+.hero-opacity {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--black-alpha-color);
 }
-.hero__content__text{
-    font-size: 2rem;
+.hero__content__text {
+  font-size: 2rem;
 }
-.hero__content__text p:nth-child(2){
-    font-size: 1.5rem;
+.hero__content__text p:nth-child(2) {
+  font-size: 1.5rem;
 }
-.hero__content img{
-    border-radius: 50%;
-    width: 50%;
-    height: 50%;
-    filter: grayscale(0.0);
+.hero__content img {
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  filter: grayscale(0);
 }
-.hero__scroll__btn{
-    position: absolute;
-    left: 50%;
-    bottom: 1.5rem;
-    transform: translate(-50%);
-    color: var(--white-color);
-    font-size: 1.8rem;
+.hero__scroll__btn {
+  position: absolute;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translate(-50%);
+  color: var(--white-color);
+  font-size: 1.8rem;
 }
 .hobbies,
 .series,
-.movies{
-    padding: 6rem 0;
+.movies {
+  padding: 6rem 0;
 }
-.section-title{
-    font-size: 4rem;
-    color: var(--white-color);
+.section-title {
+  font-size: 4rem;
+  color: var(--white-color);
 }
-.movies .section-title span{
-    font-size: 1.5rem;
+.movies .section-title span {
+  font-size: 1.5rem;
 }
-.card{
-    background-color: transparent;
-    border: none;
-    text-align: center;
+.card {
+  background-color: transparent;
+  border: none;
+  text-align: center;
 }
-.card img{
-    border-radius: 50%;
-    object-position: center bottom;
+.card img {
+  border-radius: 50%;
+  object-position: center bottom;
 }
-.card{
-    color: var(--white-color);
+.card {
+  color: var(--white-color);
 }
-.card-title{
-    font-size: 1.5rem;
+.card-title {
+  font-size: 1.5rem;
 }
-.card-text{
-    font-size: 1.1rem;
+.card-text {
+  font-size: 1.1rem;
 }
-.series img{
-    width: 80px;
-    height: 450px;
+.series img {
+  width: 80px;
+  height: 450px;
 }
-.movies__text{
-    font-size: 1.8rem;
+.movies__text {
+  font-size: 1.8rem;
 }
-.footer{
-    border-top: 1px solid #fff;
+.footer {
+  border-top: 1px solid #fff;
 }
-.center{
-    position: absolute;
-    min-height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    background: linear-gradient(to right, #160b08, #281a3f);
+.center {
+  position: absolute;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  background: linear-gradient(to right, #160b08, #281a3f);
 }
-.hidden{
-    overflow: hidden;
+.hidden {
+  overflow: hidden;
 }
